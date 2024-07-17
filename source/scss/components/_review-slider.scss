@@ -1,0 +1,68 @@
+.review-slider {
+  @include for-mobile {
+    padding: 8px 0 13px;
+  }
+
+  position: relative;
+  z-index: 1;
+
+  &.active{
+    &:after{
+        opacity: 1;
+        visibility: visible;
+    }
+  }
+
+  &.end{
+    &::before{
+        opacity: 0;
+        visibility: hidden;
+    }
+  }
+
+  &::before, &::after{
+    content: '';
+    z-index: 3;
+    position: absolute;
+    width: 80px;
+    top: 0;
+    height: 100%;
+    pointer-events: none;
+    transition: all .3s;
+
+    @include tablet{
+      display: none;
+    }
+  }
+
+  &::before{
+    right: 0;
+    background: var(--gr-a);
+  }
+
+  &::after{
+    opacity: 0;
+    visibility: hidden;
+    left: 0;
+    background: var(--gr-b);
+  }
+
+  .swiper{
+
+    &-container{
+        @include tablet{
+            margin-left: calc(var(--container-offset) * -1);
+            width: calc(100% + (var(--container-offset) * 2));
+            padding: 0 var(--container-offset);
+        }
+    }
+
+    &-slide {
+        width: 324px;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+  }
+
+}

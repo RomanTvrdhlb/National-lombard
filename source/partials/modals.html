@@ -1,0 +1,164 @@
+<div class="overlay fixed-block" data-overlay>
+
+  <div class="modal cost" data-popup="cost">
+    <button class="close" aria-label="Закрыть модальное окно">
+      <svg width="30" height="30">
+        <use href="img/sprite/sprite.svg#close2"></use>
+      </svg>
+    </button>
+
+    <div class="modal__box">
+      <span class="title">Ювелірні вироби</span>
+
+      <ol>
+        <li>
+          <p>Золото</p>
+        </li>
+        <li>
+          <p>Срібло</p>
+        </li>
+        <li>
+          <p>Платина</p>
+        </li>
+        <li>
+          <p>Банківські злитки</p>
+        </li>
+      </ol>
+
+      <button class="main-btn">Розрахувати вартість онлайн</button>
+    </div>
+  </div>
+
+  <div class="modal calculate" data-popup="calculate">
+    <button class="close" aria-label="Закрыть модальное окно">
+      <svg width="30" height="30">
+        <use href="img/sprite/sprite.svg#close2"></use>
+      </svg>
+    </button>
+
+    <div class="modal__box">
+      <div class="modal__top">
+        <span class="title">Кредит під заставу</span>
+        <span class="subtitle">Оцінка онлайн</span>
+      </div>
+     
+     <div class="modal__wrapp">
+      <ul class="modal__tab">
+        <li>
+          <button class="active">Ювелірні вироби</button>
+        </li>
+        <li>
+          <button>Цифрова техніка</button>
+        </li>
+        <li>
+          <button>Побутова техніка</button>
+        </li>
+        <li>
+          <button>Нерухоме майно</button>
+        </li>
+        <li>
+          <button>Автомобілі</button>
+        </li>
+      </ul>
+     
+      <form class="calc-form">
+        <div class="calc-form__box">
+
+          <div class="calc-form__wrapp">
+            <div class="calc-form__col">
+            <span class="calc-form__title">Вага*</span>
+            <div class="select" data-select>
+              <div class="select__header">
+                  <input type="hidden" class="select__input input-select" name="metal"
+                      value="1">
+                  <span class="select__current" data-id="1">
+                    Золото
+                  </span>
+                  <svg class="select__current-icon" width='20' height='20'>
+                      <use href='img/sprite/sprite.svg#arrow-d'></use>
+                  </svg>
+              </div>
+              <div class="select__body">
+                  <ul class="select__list">
+                      <li class="select__option" data-id="1" data-type="option">
+                        Золото
+                      </li>
+                      <li class="select__option" data-id="2" data-type="option">
+                        Срібло
+                      </li>
+                      <li class="select__option" data-id="3" data-type="option">
+                        Платина
+                      </li>
+                      <li class="select__option" data-id="4" data-type="option">
+                        Банківські злитки
+                      </li>
+                  </ul>
+              </div>
+          </div>
+            </div>
+            <div class="calc-form__col">
+              <span class="calc-form__title">Вага*</span>
+              <div class="select" data-select>
+                <div class="select__header">
+                    <input type="hidden" class="select__input input-select" name="probe"
+                        value="1">
+                    <span class="select__current" data-id="1">
+                      375
+                    </span>
+                    <svg class="select__current-icon" width='20' height='20'>
+                        <use href='img/sprite/sprite.svg#arrow-d'></use>
+                    </svg>
+                </div>
+                <div class="select__body">
+                    <ul class="select__list">
+                        <li class="select__option" data-id="1" data-type="option">
+                          375
+                        </li>
+                        <li class="select__option" data-id="2" data-type="option">
+                            500
+                        </li>
+                        <li class="select__option" data-id="3" data-type="option">
+                           583
+                        </li>
+                        <li class="select__option" data-id="4" data-type="option">
+                          585
+                        </li>
+                        <li class="select__option" data-id="5" data-type="option">
+                           750
+                        </li>
+                        <li class="select__option" data-id="6" data-type="option">
+                           900
+                        </li>
+                        <li class="select__option" data-id="7" data-type="option">
+                          958
+                       </li>
+                    </ul>
+                </div>
+            </div>
+            </div>
+              
+                <label for="weight" class="calc-form__label">
+                  <span class="calc-form__title">Вага*</span>
+                  <input type="number" name="weight" id="weight" class="calc-form__input">
+                </label>
+          </div>
+
+        <div class="calc-form__inner">
+          <label for="user" class="calc-form__label">
+            <span class="calc-form__title">Ім’я*</span>
+            <input type="text" name="user" id="user" class="calc-form__input">
+          </label>
+          <label for="phone" class="calc-form__label">
+            <span class="calc-form__title">Номер телефону*</span>
+            <input type="tel" name="phone" id="phone" class="calc-form__input">
+          </label>
+        </div>
+      </div>
+        <button class="main-btn">Розрахувати вартість</button>
+      </form>
+    </div> 
+    </div>
+  </div>
+
+
+</div>

@@ -1,0 +1,141 @@
+.info-section{
+    padding-bottom: clamp(40px, 10.4545vw, 115px);
+    position: relative;
+    z-index: 2;
+
+    &.mode{
+        &::before, &:after{
+            content: '';
+        }
+    }
+
+    &.cost{
+        &::before, &:after{
+            content: '';
+            transform: translate(-50%, -50%);
+        }
+
+        &::before{
+            rotate: -45deg;
+        }
+    
+        &::after{
+            rotate: -45deg;
+            transform: translate(50%, -50%);
+            
+        }
+    }
+
+    &.review{
+        &::before, &:after{
+            content: '';
+            transform: translate(-100%, -100%);
+            bottom: 32%;
+        }
+
+        &::before{
+            rotate: -135deg;
+
+            @media (max-width: (1700px)) {
+                @media (min-width: (1600px)) {
+                    left: -7%;
+                }
+            }
+
+            @include desktop{
+                left: -12%;
+            }
+        }
+    
+        &::after{
+            rotate: -135deg;
+            transform: translate(0%, -100%);
+            
+            @media (max-width: (1700px)) {
+                @media (min-width: (1600px)) {
+                    right: -7%;
+                }
+            }
+
+            @include desktop{
+                right: -12%;
+            }
+        }
+    }
+
+    &::before, &::after{
+        transform-origin: top left;
+        z-index: -1;
+        position: absolute;
+        background-size: contain;
+        background-position: center;
+        background-repeat: no-repeat;
+        pointer-events: none;
+        width: Min(26.771vw, 514px);
+        height: Min(27.031vw, 519px);
+        transform: translate(-50%, 29%);
+        background-image: url(../img/sprite/layer.svg);
+        bottom: 0;
+
+        @include laptop{
+            display: none;
+        }
+    }
+
+    &::before{
+        @media (min-width: (1600px)) {
+            left: 0;
+        }
+
+        @media (max-width: (1600px)) {
+            @include for-desktop{
+                left: -5%;
+            }
+        }
+
+        @include desktop{
+            left: -8%;
+        }
+    }
+
+    &:after{
+        transform-origin: top right;
+        transform: translate(50%, 29%);
+
+        @media (min-width: (1600px)) {
+            right: 0;
+        }
+
+        @media (max-width: (1600px)) {
+            @include for-desktop{
+                right: -5%;
+            }
+        }
+
+        @include desktop{
+            right: -8%;
+        }
+    }
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(35px, 4.5455vw, 50px);
+    }
+
+    &__wrapp{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(25px, 4.5455vw, 50px);
+    }
+
+    &__inner{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(35px, 7.2727vw, 80px);
+
+        button{
+            align-self: center;
+        }
+    }
+}

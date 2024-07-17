@@ -1,0 +1,122 @@
+.footer {
+  overflow: hidden;
+  background-color: rgba(var(--bg-e),1.0);
+  padding: clamp(40px, 6.8182vw, 75px) 0 clamp(30px, 3.1818vw, 35px);
+  position: relative;
+  z-index: 1;
+
+  &::before, &::after{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    background-size: cover;
+    background-repeat: no-repeat;
+    pointer-events: none;
+}
+
+&::before{
+    background-image: var(--footer-icon);
+    background-position: top left;
+    width: Min(19.948vw ,383px);
+    height: Min(11.979vw, 230px);
+    top: 0;
+    left: 0;
+
+    @media (max-width: (1780px)) {
+      left: -3%;
+      top: -7%;
+    }
+
+    @include desktop{
+      top: -10px;
+      left: -10px;
+    }
+}
+
+&::after{
+    background-image: var(--footer-icon2);
+    background-position: bottom right;
+    width: Min(19.063vw, 366px);
+    height: Min(20.313vw, 390px);
+    bottom: 0;
+    right: 0;
+
+    @media (max-width: (1780px)) {
+      right: -8%;
+    }
+
+@include desktop{
+  bottom: -0px;
+      right: -25px;
+    }
+}
+
+  &__box{
+    display: flex;
+    justify-content: space-between;
+    grid-gap: 20px;
+
+    @include small-tablet{
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+
+  &__wrapp{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    @include for-small-tablet{
+      align-items: flex-end;
+      grid-gap: 15px;
+    }
+
+    @include small-tablet{
+      align-items: center;
+      grid-gap: 20px;
+    }
+  }
+
+  &__inner{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 3.6364vw, 40px);
+
+    @include for-small-tablet{
+      max-width: clamp(360px, 46.3636vw, 510px);
+    }
+
+    @include small-tablet{
+      align-items: center;
+    }
+  }
+
+  &__row{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(15px, 2.2727vw, 25px);
+
+    @include small-tablet{
+      align-items: center;
+
+      .pretitle{
+        text-align: center;
+      }
+    }
+  }
+
+  &__copyright{
+    font-weight: 500;
+    font-size: 14px;
+    color: rgba(var(--cl-d), 1);
+
+    @include for-small-tablet{
+      text-align: right;
+    }
+
+    @include small-tablet{
+      text-align: center;
+    }
+  }
+}

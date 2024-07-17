@@ -1,0 +1,147 @@
+.title {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: clamp(24px, 3.2727vw, 36px);
+  color: rgba(var(--cl-d), 1);
+  border-bottom: 2px solid var(--br-a);
+  padding: 5px clamp(15px, 2.7273vw, 30px);
+
+  &--mode {
+    width: fit-content;
+    align-self: center;
+  }
+}
+
+.subtitle {
+  font-weight: 700;
+  font-size: clamp(17px, 2.1818vw, 24px);
+  text-align: center;
+  color: rgba(var(--cl-e), 1);
+}
+
+.pretitle {
+  border-bottom: 1px solid var(--br-c);
+  width: fit-content;
+  font-weight: 700;
+  font-size: clamp(14px, 1.4545vw, 16px);
+  text-transform: uppercase;
+  color: rgba(var(--cl-d), 1);
+  line-height: 120%;
+}
+
+.map {
+  border-radius: 20px;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+
+  iframe {
+    border-radius: inherit;
+    width: 100%;
+    height: 100%;
+  }
+
+  @include small-tablet{
+    aspect-ratio: 1;
+  }
+}
+
+.rating {
+  display: flex;
+  align-items: center;
+  grid-gap: 3px;
+
+  &__star {
+    width: 15px;
+    height: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: var(--star-none);
+
+    &.active {
+      background-image: var(--star);
+    }
+  }
+}
+
+.swiper-pagination {
+  display: flex;
+  align-items: center;
+  grid-gap: clamp(8px, 1.3636vw, 15px);
+
+  &-bullet {
+    border-radius: 100%;
+    display: block;
+    background-color: transparent;
+    opacity: 1;
+    transition: all 0.2s;
+    cursor: pointer;
+    border: solid 1px var(--br-b);
+    width: clamp(10px, 1.4545vw, 16px);
+    height: clamp(10px, 1.4545vw, 16px);
+
+    &-active {
+      background-color: rgba(var(--bg-a), 1);
+    }
+  }
+}
+
+.logo{
+  display: flex;
+  height: auto;
+
+  svg {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.header-logo {
+  width: clamp(135px, 15.7273vw, 173px);
+}
+
+.footer-logo {
+  @include for-small-tablet{
+    width: clamp(170px, 18.2727vw, 201px);
+  }
+
+  @include small-tablet{
+    width: clamp(120px, 22.135vw, 170px);
+
+  }
+}
+
+ol:not([class]){
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  padding: 10px;
+
+  li{
+    position: relative;
+    padding-left: 18px;
+
+    &::before{
+      content: '';
+      position: absolute;
+      content: '';
+      top: 50%;
+      left: 0;
+      width: 7px;
+      height: 7px;
+      transform: translateY(-50%) rotate(45deg);
+      background-color: rgba(var(--bg-c),1.0);
+    }
+  }
+
+  p{
+    font-size: clamp(16px, 1.6364vw, 18px);
+    line-height: 125%;
+  }
+}

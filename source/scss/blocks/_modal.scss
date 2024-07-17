@@ -1,0 +1,202 @@
+.modal {
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  grid-gap: 25px;
+  border-radius: 20px;
+  z-index: 40;
+  max-width: clamp(460px, 57.2727vw, 630px);
+  background-color: rgba(var(--bg-d),1.0);
+  width: 90vw;
+  overflow: hidden;
+
+  @include for-mobile{
+    padding: clamp(45px, 6.8182vw, 75px) clamp(25px, 6.8182vw, 75px) clamp(35px, 5.9091vw, 65px);
+  }
+
+  @include mobile{
+    padding: 45px 20px 35px;
+  }
+
+  &__box {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(20px, 2.6364vw, 29px);
+    z-index: 2;
+    position: relative;
+  }
+
+  &__top{
+    display: flex;
+    flex-direction: column;
+    grid-gap: 15px;
+    width: 100%;
+  }
+
+  &::before,&::after{
+    position: absolute;
+    content: '';
+    z-index: -1;
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+
+  &::before{
+    top: 0;
+    left: 0;
+    background-position: top left;
+    background-image: var(--modal-icon);
+    width: clamp(103px,16.8182vw, 185px);
+    height: clamp(67px,11vw, 121px);
+  }
+
+  &::after{
+    bottom: 0;
+    right: 0;
+    background-position: bottom right;
+    background-image: var(--modal-icon2);
+    width: clamp(114px, 19vw, 209px);
+    height: clamp(195px, 32.3636vw, 356px);
+  }
+
+  .title{
+    padding: 15px clamp(15px, 2.7273vw, 30px);
+  }
+
+  .main-btn{
+    align-self: center;
+    padding: 8.5px 33px;
+    width: fit-content;
+    font-weight: 500;
+    color: rgba(var(--cl-f),1.0);
+
+    &:hover{
+      color: rgba(var(--cl-g),1.0);
+    }
+  }
+
+  &__inner {
+    width: 100%;
+    display: flex;
+    grid-gap: clamp(15px, 1.0417vw, 20px);
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  &__wrapp{
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__tab{
+    align-items: center;
+    background-color: rgba(var(--bg-d),1.0);
+    display: flex;
+    flex-direction: row;
+    border-top: solid 1px var(--br-b);
+    border-right:solid 1px var(--br-b);
+    border-left:solid 1px var(--br-b);
+    @include tablet{
+      overflow-x: auto;
+      border: solid 1px var(--br-b);
+      border-bottom: solid 1px var(--br-e);
+    }
+
+    &::-webkit-scrollbar {
+      height: 3px;
+    }
+
+    li{
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-bottom: solid 1px var(--br-b);
+
+      &:not(:last-child){
+        border-right: solid 1px var(--br-b);
+      }
+    }
+
+    button,a{
+      line-height: 150%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 500;
+      font-size: clamp(15px, 1.4545vw, 16px);
+      text-align: center;
+      color: rgba(var(--cl-c),1.0);
+      padding: 14px 3px;
+      background-color: rgba(var(--bg-d),1.0);
+      position: relative;
+      z-index: 1;
+      transition: all .3s;
+
+      
+      &::before{
+        position: absolute;
+        content: '';
+        border-radius: 100px 100px 0 0;
+        width: 126px;
+        height: 3px;
+        background-color: rgba(var(--bg-c),1.0);
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        transition: all .3s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 2;
+        pointer-events: none;
+      }
+
+      &:hover{
+        background-color: rgba(var(--bg-e),.8);
+      }
+
+      &.active{
+        background-color: rgba(var(--bg-e),1.0);
+        &::before{
+          opacity: 1;
+          visibility: visible;
+        }
+      }
+
+      @include tablet{
+        white-space: nowrap;
+        padding: 14px 13px;
+      }
+    }
+  }
+
+  &.calculate{
+    max-width: clamp(460px, 97.0909vw, 1068px);
+    border-radius: 15px;
+    
+    .modal{
+
+      &__box{
+        grid-gap: clamp(35px, 4.5455vw, 50px);
+      }
+
+    }
+
+    .main-btn{
+      align-self: center;
+      padding: 18px 55px;
+      font-weight: 700;
+      color: rgba(var(--cl-a),1.0);
+  
+      &:hover{
+        color: rgba(var(--cl-g),1.0);
+      }
+
+      @include mobile{
+        width: 100%;
+      }
+    }
+  }
+}

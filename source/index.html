@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="Ru">
+@include('partials/head.html')
+
+<body>
+  @include('partials/header.html')
+
+  <main>
+
+    <section class="info-section mode">
+      <div class="container">
+        <div class="info-section__box">
+          <div class='main-slider'>
+            <div class='swiper-container'>
+              <ul class='swiper-wrapper'>
+                <li class='swiper-slide'>
+                  <div class="card">
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/img1.webp'>
+                        <img width='1100' height='609' src='img/index/img1.jpg' alt='image'>
+                      </picture>
+                    </div>
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="card">
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/img1.webp'>
+                        <img width='1100' height='609' src='img/index/img1.jpg' alt='image'>
+                      </picture>
+                    </div>
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="card">
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/img1.webp'>
+                        <img width='1100' height='609' src='img/index/img1.jpg' alt='image'>
+                      </picture>
+                    </div>
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="card">
+                    <div class="card__image">
+                      <picture>
+                        <source type='image/webp' srcset='img/index/img1.webp'>
+                        <img width='1100' height='609' src='img/index/img1.jpg' alt='image'>
+                      </picture>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <span class='swiper-pagination'></span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="container">
+        <div class="info-section__box">
+          <div class="main-top">
+            <div class="main-top__box">
+              <h2 class="title title--mode">Національний ломбард — якість і вигідні умови</h2>
+              <span class="subtitle">Мережа ломбардів «Національний»</span>
+            </div>
+            <p>
+              Коли необхідно терміново отримати гроші, важливо не забувати і про власну вигоду. Адже коли обставини
+              складаються не найкращим чином, людина може не звернути увагу на відсотки та інші умови надання кредиту, а
+              отже в результаті доведеться повернути значно більше, ніж отримали.
+              <br><br>
+              Наша команда фахівців з величезним досвідом роботи  в фінансовому секторі постійно розвивається,
+              удосконалює свої послуги, яка слідує таким принципам, як простота взаємодії, іноваційність та мобільність.
+              <strong>Наші експерти оцінять заставу протягом 10 хв., ви зможете отримати гроші готівкою без зайвих складнощів.</strong>
+              <br><br>
+              <strong>Ломбард “Національний”</strong> пропонує якість обслуговування і вигідні умови для всіх клієнтів. Конфіденційність
+              та надійність гарантовані кожному, без винятків. Наші переваги та європейський підхід до ведення справ
+              зробили нас популярними серед населення.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section cost">
+      <div class="container">
+        <div class="info-section__box">
+          <div class="main-top">
+            <div class="main-top__box">
+              <h2 class="title">Ломбард «Національний» кредитує під заставу:</h2>
+              <span class="subtitle">Для отримання грошей, потрібен ІПН та паспорт (або інший документ, що посвідчує особу).</span>
+            </div>
+          </div>
+
+          <div class="info-section__inner">
+
+          <ul class="cost-list">
+            <li class="cost-list__item">
+              <a href="#" class="cost-card" data-btn-modal="calculate">
+                <span class="cost-card__icon">
+                  <svg width='56' height='72'>
+                    <use href='img/sprite/sprite.svg#icon1'></use>
+                  </svg>
+                </span>
+                <span class="cost-card__title">Ювелірні вироби</span>
+              </a>
+            </li>
+            <li class="cost-list__item">
+              <a href="#" class="cost-card"  data-btn-modal="cost">
+                <span class="cost-card__icon">
+                  <svg width='76' height='77'>
+                    <use href='img/sprite/sprite.svg#icon2'></use>
+                  </svg>
+                </span>
+                <span class="cost-card__title">Цифрова техніка</span>
+              </a>
+            </li>
+            <li class="cost-list__item">
+              <a href="#" class="cost-card"  data-btn-modal="cost">
+                <span class="cost-card__icon">
+                  <svg width='62' height='98'>
+                    <use href='img/sprite/sprite.svg#icon3'></use>
+                  </svg>
+                </span>
+                <span class="cost-card__title">Побутова техніка</span>
+              </a>
+            </li>
+            <li class="cost-list__item">
+              <a href="#" class="cost-card"  data-btn-modal="cost">
+                <span class="cost-card__icon">
+                  <svg width='92' height='85'>
+                    <use href='img/sprite/sprite.svg#icon4'></use>
+                  </svg>
+                </span>
+                <span class="cost-card__title">Нерухоме майно</span>
+              </a>
+            </li>
+            <li class="cost-list__item">
+              <a href="#" class="cost-card cost-card--mode"  data-btn-modal="cost">
+                <span class="cost-card__icon">
+                  <svg width='104' height='58'>
+                    <use href='img/sprite/sprite.svg#icon5'></use>
+                  </svg>
+                </span>
+                <span class="cost-card__title">Автомобілі</span>
+              </a>
+            </li>
+          </ul>
+
+          <button class="main-btn">Розрахувати вартість онлайн</button>
+
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section">
+      <div class="container">
+        <div class="info-section__box">
+          <div class="main-top">
+            <div class="main-top__box">
+              <h2 class="title title--mode">Переваги ломбарду Національний</h2>
+              <span class="subtitle">Співпраця з нами гарантує клієнтам наступні переваги:</span>
+            </div>
+
+            <ul class="advantages-list">
+              <li class="advantages-list__item">
+                <div class="advantages-card">
+                  <span class="advantages-card__icon">
+                    <svg width='30' height='30'>
+                      <use href='img/sprite/sprite.svg#money'></use>
+                    </svg>
+                  </span>
+                 <p>Чесні тарифи і достойні виплати</p>
+                </div>
+              </li>
+              <li class="advantages-list__item">
+                <div class="advantages-card">
+                  <span class="advantages-card__icon">
+                    <svg width='30' height='30'>
+                      <use href='img/sprite/sprite.svg#medal'></use>
+                    </svg>
+                  </span>
+                  <p>Якісну перевірку застави, а отже чесну виплату готівки.</p>
+                </div>
+              </li>
+              <li class="advantages-list__item">
+                <div class="advantages-card">
+                  <span class="advantages-card__icon">
+                    <svg width='30' height='30'>
+                      <use href='img/sprite/sprite.svg#hearth'></use>
+                    </svg>
+                  </span>
+                 <p>Лояльний підхід до кожного відвідувача.</p>
+                </div>
+              </li>
+              <li class="advantages-list__item">
+                <div class="advantages-card">
+                  <span class="advantages-card__icon">
+                    <svg width='30' height='30'>
+                      <use href='img/sprite/sprite.svg#lock'></use>
+                    </svg>
+                  </span>
+                 <p>Повну конфіденційність — будьте певні, жодні відомості про контракт не будуть розголошені.</p>
+                </div>
+              </li>
+            </ul>            
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="info-section review">
+      <div class="container">
+        <div class="info-section__box">
+          <h2 class="title title--mode">Відгуки</h2>
+
+          <div class='review-slider'>
+            <div class="swiper-container">
+              <ul class='swiper-wrapper'>
+                <li class='swiper-slide'>
+                  <div class="review-card">
+                    <div class="review-card__top">
+                      <span class="review-card__date">12.02.2024</span>
+                      <ul class="rating">
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star"></span>
+                        </li>
+                      </ul>
+                      <span class="review-card__title">Микола</span>
+                    </div>
+        
+                    <p>Купив: Смартфон Moto G84 12/256GB, Замовлення Nº54855 Сподобалося: відповідність ціни, наявність, відвантаження товару, відповідність умов оплати</p>
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="review-card">
+                    <div class="review-card__top">
+                      <span class="review-card__date">12.02.2024</span>
+                      <ul class="rating">
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star"></span>
+                        </li>
+                      </ul>
+                      <span class="review-card__title">Микола</span>
+                    </div>
+        
+                    <p>Купив: Смартфон Moto G84 12/256GB Midnight Blue (PAYM0011), Замовлення Nº54855 Сподобалося: відповідність ціни, наявність, відвантаження товару, відповідність умов оплати, фіскальний чек</p>
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="review-card">
+                    <div class="review-card__top">
+                      <span class="review-card__date">12.02.2024</span>
+                      <ul class="rating">
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                      </ul>
+                      <span class="review-card__title">Микола Іванович</span>
+                    </div>
+        
+                    <p>Замовлення Nº54855 Сподобалося: відповідність ціни, наявність, відвантаження товару, відповідність умов оплати, фіскальний чек</p>
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="review-card">
+                    <div class="review-card__top">
+                      <span class="review-card__date">12.02.2024</span>
+                      <ul class="rating">
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star"></span>
+                        </li>
+                      </ul>
+                      <span class="review-card__title">Микола</span>
+                    </div>
+        
+                    <p>Купив: Смартфон Moto G84 12/256GB, Замовлення Nº54855 Сподобалося: відповідність ціни, наявність, відвантаження товару, відповідність умов оплати</p>
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="review-card">
+                    <div class="review-card__top">
+                      <span class="review-card__date">12.02.2024</span>
+                      <ul class="rating">
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star"></span>
+                        </li>
+                      </ul>
+                      <span class="review-card__title">Микола</span>
+                    </div>
+        
+                    <p>Купив: Смартфон Moto G84 12/256GB Midnight Blue (PAYM0011), Замовлення Nº54855 Сподобалося: відповідність ціни, наявність, відвантаження товару, відповідність умов оплати, фіскальний чек</p>
+                  </div>
+                </li>
+                <li class='swiper-slide'>
+                  <div class="review-card">
+                    <div class="review-card__top">
+                      <span class="review-card__date">12.02.2024</span>
+                      <ul class="rating">
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                        <li class="rating__item">
+                          <span class="rating__star active"></span>
+                        </li>
+                      </ul>
+                      <span class="review-card__title">Микола Іванович</span>
+                    </div>
+        
+                    <p>Замовлення Nº54855 Сподобалося: відповідність ціни, наявність, відвантаження товару, відповідність умов оплати, фіскальний чек</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section">
+      <div class="container">
+        <div class="about-section__box">
+
+          <div class="main-top">
+            <h2 class="title title--mode">Як нас знайти</h2>
+
+            <p>
+              <strong>Ломбард «Національний» розташований за адресою:</strong>
+              <br>
+              <strong>м. Ужгород, вул., Швабська, 21 (центр міста).</strong>
+              <br>
+              <strong>Ми працюємо щодня з 9:00 до 19:00.</strong>
+            </p>
+          </div>
+
+          <div class="about-section__inner">
+
+            <form class="main-form">
+              <div class="main-form__top">
+                <span class="main-form__title">Залиште заявку</span>
+                <p>і ми зв’яжемося з вами</p>
+              </div>
+
+              <label for="name" class="main-form__label">
+                <input type="text" class="main-form__input" name="name" id="name" placeholder="Ваше ім'я*">
+              </label>
+              <label for="phone" class="main-form__label">
+                <input type="tel" class="main-form__input" name="phone" id="phone" placeholder="Номер телефону*">
+              </label>
+              <label for="mess" class="main-form__label">
+                <textarea name="mess" id="mess" class="main-form__area" placeholder="Повідомлення*"></textarea>
+              </label>
+              <button class="white-btn" type="submit">Відправити</button>
+            </form>
+
+            <div class="map">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d329.701153877864!2d22.296013022395687!3d48.61732278477894!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1721079295408!5m2!1sru!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" frameborder="0" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+
+
+  </main>
+
+  @include('partials/footer.html')
+  @include('partials/modals.html')
+</body>
+<script src="js/main.js"></script>
+
+</html>

@@ -1,0 +1,14 @@
+.cost-list{
+    display: flex;
+    flex-wrap: wrap;
+    grid-gap: clamp(30px, 7.2727vw, 80px) clamp(40px, 11.3636vw, 125px);
+    justify-content: center;
+
+
+    @include for-mobile{
+        padding: 0 40px;
+    }
+
+
+    
+}

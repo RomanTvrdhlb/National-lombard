@@ -1,0 +1,18 @@
+.offers-list{
+    display: grid;
+   
+    
+    @include for-tablet{
+        padding: 0 Min(7.258vw, 90px);
+    }
+
+    @include for-small-tablet{
+        grid-gap: clamp(25px, 4.6364vw, 51px) clamp(20px, 2.7273vw, 30px);
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @include small-tablet{
+        grid-gap: 35px 20px;
+        grid-template-columns: 100%;
+    }
+}

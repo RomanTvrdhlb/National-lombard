@@ -1,0 +1,26 @@
+.main-slider {
+  position: relative;
+  z-index: 2;
+
+  .swiper {
+    &-container {
+      border-radius: 20px;
+      overflow: hidden;
+    }
+
+    &-slide {
+      border-radius: 20px;
+      width: 100%;
+      height: clamp(300px, 55.3636vw, 609px);
+      overflow: hidden;
+    }
+
+    &-pagination {
+      bottom: clamp(20px, 3.6364vw, 40px);
+      left: 50%;
+      transform: translateX(-50%);
+      position: absolute;
+      z-index: 5;
+    }
+  }
+}

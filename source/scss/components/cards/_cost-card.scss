@@ -1,0 +1,46 @@
+.cost-card{
+    display: flex;
+    grid-gap: 10px;
+    flex-direction: column;
+    align-items: center;
+    max-width: 170px;
+    width: 100%;
+
+    &:hover{
+        .cost-card__icon{
+            transform: scale(.9) rotate(10deg);
+        }
+    }
+
+    &--mode{
+        &:hover{
+            .cost-card__icon{
+                transform: scale(.9) rotate(-10deg);
+            }
+        } 
+    }
+
+    &__icon{
+        width: clamp(60px, 10.5455vw, 116px);
+        height: clamp(60px, 10.5455vw, 116px);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all .4s;
+
+        @include mobile{
+            svg{
+                height: 100%;
+                width: auto;
+            }
+        }
+    }
+
+    &__title{
+        font-weight: 700;
+        font-size: clamp(15px, 1.4545vw, 16px);
+        text-transform: uppercase;
+        text-align: center;
+        color: rgba(var(--cl-c),1.0);
+    }
+}

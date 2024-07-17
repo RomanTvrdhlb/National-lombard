@@ -1,0 +1,49 @@
+.white-btn{
+  border-radius: 12px;
+  padding: 9.5px 33px;
+  height: 38px;
+  background-color: rgba(var(--bg-d),1.0);
+  font-family: var(--font-family);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 110%;
+  text-align: center;
+  color: rgba(var(--cl-g),1.0);
+  transition: all .4s;
+  border: 2px solid transparent;
+
+  &:hover{
+    color: rgba(var(--cl-a),1.0);
+    background-color: rgba(var(--bg-c),1.0);
+    border-color: var(--br-b);
+  }
+}
+
+.main-btn{
+  border-radius: 12px;
+  padding: 18px 55px;
+  line-height: 110%;
+  text-align: center;
+  transition: all .4s;
+  font-family: var(--font-family);
+  font-weight: 700;
+  font-size: 16px;
+  text-align: center;
+  background-color: rgba(var(--bg-c),1.0);
+  color: rgba(var(--cl-a),1.0);
+  border: 2px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &:hover{
+    color: rgba(var(--cl-g),1.0);
+    background-color: rgba(var(--bg-d),1.0);
+    border-color: var(--br-a);
+  }
+
+  @include mobile{
+    width: 100%;
+    padding: 18px 10px;
+  }
+}

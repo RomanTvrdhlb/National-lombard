@@ -1,0 +1,21 @@
+.main-top{
+    display: flex;
+    flex-direction: column;
+    grid-gap: clamp(30px, 4.5455vw, 50px);
+
+    &__box{
+        display: flex;
+        flex-direction: column;
+        grid-gap: clamp(10px, 1.3636vw, 15px);
+    }
+
+    p{
+        @include for-small-tablet{
+            text-align: justify;
+        }
+
+        @include small-tablet{
+            text-align: center;
+        }
+    }
+}
