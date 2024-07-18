@@ -6,7 +6,7 @@
     &__box{
         display: flex;
         flex-direction: column;
-        grid-gap: clamp(10px, 1.3636vw, 15px);
+        grid-gap: 15px;
     }
 
     p{

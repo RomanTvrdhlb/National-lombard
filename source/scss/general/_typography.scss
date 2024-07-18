@@ -3,7 +3,7 @@
   text-align: center;
   justify-content: center;
   font-weight: 700;
-  font-size: clamp(24px, 3.2727vw, 36px);
+  font-size: clamp(27px, 3.2727vw, 36px);
   color: rgba(var(--cl-d), 1);
   border-bottom: 2px solid var(--br-a);
   padding: 5px clamp(15px, 2.7273vw, 30px);
@@ -16,7 +16,7 @@
 
 .subtitle {
   font-weight: 700;
-  font-size: clamp(17px, 2.1818vw, 24px);
+  font-size: clamp(18px, 2.1818vw, 24px);
   text-align: center;
   color: rgba(var(--cl-e), 1);
 }
@@ -50,23 +50,10 @@
 
 .rating {
   display: flex;
-  align-items: center;
-  grid-gap: 3px;
-
-  &__star {
-    width: 15px;
-    height: 15px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: var(--star-none);
-
-    &.active {
-      background-image: var(--star);
-    }
+  width: 88px;
+  height: 17px;
+  svg{
+    fill: none;
   }
 }
 

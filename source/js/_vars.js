@@ -15,8 +15,5 @@ export default {
   innerButtonModal: [...document.querySelectorAll('[data-btn-inner]')],
   mainSliders: document.querySelectorAll('.main-slider'),
   reviewSliders: document.querySelectorAll('.review-slider'),
- 
-
- 
 }
 

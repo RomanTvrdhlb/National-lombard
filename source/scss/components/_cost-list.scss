@@ -1,14 +1,21 @@
 .cost-list{
     display: flex;
     flex-wrap: wrap;
-    grid-gap: clamp(30px, 7.2727vw, 80px) clamp(40px, 11.3636vw, 125px);
     justify-content: center;
 
-
     @include for-mobile{
-        padding: 0 40px;
+        padding: 0 50px;
+        grid-gap: clamp(30px, 7.2727vw, 80px) clamp(40px, 11.3636vw, 125px);
     }
 
+    @include mobile{
+        flex-direction: column;
+        grid-gap: 80px;
+    }
 
+    &__item{
+        display: flex;
+        justify-content: center;
+    }
     
 }

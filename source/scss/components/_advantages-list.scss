@@ -7,7 +7,7 @@
   }
   
   @include small-tablet{
-    grid-gap: clamp(15px, 5.4545vw, 60px) 15px;
+    grid-gap: clamp(30px, 5.4545vw, 60px) 15px;
   }
 
   @include for-mobile{

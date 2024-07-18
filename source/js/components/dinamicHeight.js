@@ -1,6 +1,6 @@
 import vars from '../_vars';
 import {elementHeight, removeCustomClass, addCustomClass} from '../functions/customFunctions';
-const {header, footer} = vars;
+const {header} = vars;
 
 let lastScroll = 0;
 const defaultOffset = 40;

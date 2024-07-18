@@ -11,18 +11,18 @@ mainSliders && mainSliders.forEach(function(slider){
   const swiper = new Swiper(container,
     {
       modules: [Autoplay, Pagination],
-      spaceBetween: 20,
-      slidesPerView: 1,
-      loop: true,
-      speed: 1500,
-      observer: true,
+      spaceBetween  : 20,
+      slidesPerView : 1,
+      loop          : true,
+      speed         : 1500,
+      observer      : true,
       observeParents: true,
       autoplay: {
-        delay: 3000,
+      delay         : 3000,
       },
       pagination: {
         clickable: true,
-        el: pagination && pagination,
+        el       : pagination && pagination,
       },
       breakpoints:{
         320:{
@@ -36,21 +36,19 @@ mainSliders && mainSliders.forEach(function(slider){
   );
 })
 
-
-
 reviewSliders && reviewSliders.forEach(function(slider){
   const container = slider.querySelector('.swiper-container');
   
   const swiper = new Swiper(container,
     {
-      spaceBetween: 20,
-      slidesPerView: 'auto',
-      grabCursor: true,
-      speed: 1500,
-      observer: true,
+      spaceBetween  : 20,
+      slidesPerView : 'auto',
+      grabCursor    : true,
+      speed         : 1500,
+      observer      : true,
       observeParents: true,
       watchSlidesProgress: true,
-      autoHeight: true,
+      autoHeight    : true,
       slidesPerGroup: 1,
 
       breakpoints:{

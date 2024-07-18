@@ -5,12 +5,12 @@
 
 :root {
   // --------------- default global variables ---------------
-  --error-bg: #d01f1f;
+  --error-bg: #dc1915;
   --body-bg: #F5F4F4;
 
   --body-font-size: 16px;
-  --content-width: 1100px;
-  --container-offset: clamp(16px, 2.1818vw, 24px);
+  --content-width: 1110px;
+  --container-offset: clamp(20px, 2.1818vw, 24px);
   --container-width: calc(var(--content-width) + (var(--container-offset) * 2));
 
   // --------------- default JS variables ---------------
@@ -28,12 +28,6 @@
   --scrollbar-thumb: #c51614d3;
   --scrollbar-track: #e7e7ea;
   --scrollbar-track-hover: transparent;
-  --overlay-bg: rgba(0, 0, 0, 0.5);
-
-  // --------------- default select variables ---------------
-  --select-inner-bg: #404040;
-  --select-inner-border: #FDFDFD;
-  --select-focus-border: #FDFDFD;
 
      // --------------- default JS variables ---------------
      --header-height: 109px;
@@ -62,11 +56,7 @@
   --cl-e: #{HexToRGB(#5e5b5a)}; // rgba(var(--cl-e),1.0);
   --cl-f: #{HexToRGB(#f5f4f4)}; // rgba(var(--cl-f),1.0);
   --cl-g: #{HexToRGB(#dc1915)}; // rgba(var(--cl-g),1.0);
-
-
-
-  --cl-h: #{HexToRGB(#221f1f)}; // rgba(var(--cl-h),1.0);
- 
+  --cl-h: #{HexToRGB(#504949)}; // rgba(var(--cl-h),1.0);
 
   // --------------- default background color variables ---------------
   --bg-a: #{HexToRGB(#ffffff)}; // rgba(var(--bg-a),1.0);
@@ -75,11 +65,9 @@
   --bg-d: #{HexToRGB(#f5f4f4)}; // rgba(var(--bg-d),1.0);
   --bg-e: #{HexToRGB(#e7e7ea)}; // rgba(var(--bg-e),1.0);
   --bg-f: #{HexToRGB(#d9d9d9)}; // rgba(var(--bg-f),1.0);
-
-
-  --bg-g: #{HexToRGB(#243466)}; // rgba(var(--bg-g),1.0);
+  --bg-g: #{HexToRGB(#f06865)}; // rgba(var(--bg-g),1.0);
+  --bg-h: #{HexToRGB(#d8d4d4)}; // rgba(var(--bg-h),1.0);
   
-
   // --------------- default border color variable ---------------
   --br-a: #dc1915; // var(--br-a);
   --br-b: #fff; // var(--br-b);
@@ -88,11 +76,9 @@
   --br-e: #e7e7ea; // var(--br-e);
   --br-f: #2b2724; // var(--br-f);
 
-
  // --------------- default gradient color variable ---------------
  --gr-a: linear-gradient(90deg, rgba(255,255,255,0) 10%, rgba(245,244,244,1) 100%); // var(--gr-a);
  --gr-b: linear-gradient(270deg, rgba(255,255,255,0) 10%, rgba(245,244,244,1) 100%); // var(--gr-b);
-
 }       
 
 

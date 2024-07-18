@@ -1,6 +1,4 @@
-import {addCustomClass, toggleCustomClass, removeCustomClass } from "../functions/customFunctions";
-import {disableScroll} from "../functions/disable-scroll";
-import {enableScroll} from "../functions/enable-scroll";
+import {addCustomClass, removeCustomClass } from "../functions/customFunctions";
 
 const closeSelect = function (selectBody, select , className = "active") {
   selectBody.style.height = 0;
@@ -18,7 +16,6 @@ const checkIsSelectOpen = function (select) {
 
 const select = document.querySelectorAll("[data-select]");
 
-console.log(select);
 if (select.length) {
   select.forEach((item) => {
     const selectCurrent = item.querySelector(".select__current");

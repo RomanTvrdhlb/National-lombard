@@ -64,6 +64,8 @@
       left: -2px;
       border: solid 1px transparent;
       border-radius: 4px;
+
+     
      
       i {
         margin: 0;
@@ -76,14 +78,14 @@
     &__list {
       overflow-y: auto;
       background: rgba(var(--bg-d),1.0);
-      padding:18px 0;
+      padding:9px 0;
       display: flex;
       flex-direction: column;
-      grid-gap: clamp(16px, 1.8182vw, 20px);
-    
+      max-height: 170px;
+
       &::-webkit-scrollbar-thumb {
-        background-color: rgba(47, 47, 47, 0.4);
-        border-radius: 8px;
+        background-color: rgba(var(--cl-g),1.0);
+        border-radius: 100px;
       }
   
       &::-webkit-scrollbar-track {
@@ -91,19 +93,18 @@
       }
   
       &::-webkit-scrollbar {
-        width: 3px;
-        border-radius: 99px;
+        width: 4px;
+        border-radius: 100px;
       }
     }
   
     &__option {
       display: flex;
-      padding: 0 15px;
+      padding: 9px 15px;
       align-items: center;
       grid-gap: 5px;
       width: 100%;
       cursor: pointer;
-   
       line-height: 100%;
       transition: all .3s;
       font-family: var(--font-family);
@@ -113,7 +114,7 @@
       color: rgba(var(--cl-c),1.0);
   
       &:hover {
-        color: rgba(var(--cl-c),.7);
+        background-color: rgba(var(--bg-e),1.0);
       }
   
       a {
@@ -122,10 +123,6 @@
         height: 100%;
         align-items: center;
         justify-content: center;
-      }
-  
-      &[data-id='2']{
-        padding-top: 0;
       }
     }
   }

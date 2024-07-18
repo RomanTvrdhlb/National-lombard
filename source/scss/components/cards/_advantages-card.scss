@@ -8,11 +8,11 @@ grid-gap: clamp(10px, 1.8182vw, 20px);
         align-items: center;
         justify-content: center;
         border-radius: 100%;
-        width: clamp(32px, 5.8182vw, 64px);
-        height: clamp(32px, 5.8182vw, 64px);
+        width: clamp(40px, 5.8182vw, 64px);
+        height: clamp(40px, 5.8182vw, 64px);
         background-color: rgba(var(--bg-c),1.0);
         flex-shrink: 0;
-        padding: clamp(8px, .9091vw, 10px);
+        padding: 10px;
         
     }
 

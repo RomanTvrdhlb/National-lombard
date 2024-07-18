@@ -1,5 +1,5 @@
 .info-section{
-    padding-bottom: clamp(40px, 10.4545vw, 115px);
+    padding-bottom: clamp(100px, 10.4545vw, 115px);
     position: relative;
     z-index: 2;
 
@@ -22,7 +22,17 @@
         &::after{
             rotate: -45deg;
             transform: translate(50%, -50%);
-            
+        }
+
+        @include mobile{
+            .info-section{
+                
+                &__inner{
+                    grid-gap: 80px;
+                }
+
+               
+            }
         }
     }
 
@@ -120,7 +130,14 @@
     &__box{
         display: flex;
         flex-direction: column;
-        grid-gap: clamp(35px, 4.5455vw, 50px);
+
+        @include for-mobile{
+            grid-gap: clamp(35px, 4.5455vw, 50px);
+        }
+
+        @include mobile{
+            grid-gap: 50px;
+        }
     }
 
     &__wrapp{
